@@ -3,23 +3,12 @@ iOS sudoku hinter
 
 
 # To do
-Next thing I need to do is to update to Xcode 11.4 and then run `carthage update` again.
+Last thing I did was added RxSwift using Cartfile. All is good.
 
-At the moment RxSwift requires Swift 5.2 and I'm only running 5.1.3 locally. I assume if I update to Xcode 11.4, then I will be on Swift 5.1.3 (but have to check that).
-
-````
-192-168-1-119:sudoku ailyntang$ carthage update
-*** Cloning RxSwift
-*** Checking out RxSwift at "5.1.1"
-*** xcodebuild output can be found in /var/folders/9g/nf4dcs393g31x4wfyvhlwld80000gn/T/carthage-xcodebuild.x7mDzQ.log
-*** Downloading RxSwift.framework binary at "Catalyst.1"
-***  Skipped installing RxSwift.framework binary due to the error:
-	"Incompatible Swift version - framework was built with 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29) and the local version is 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)."
-
-    Falling back to building from the source
-*** Building scheme "RxBlocking" in Rx.xcworkspace
-*** Building scheme "RxTest" in Rx.xcworkspace
-*** Building scheme "RxSwift" in Rx.xcworkspace
-*** Building scheme "RxRelay" in Rx.xcworkspace
-*** Building scheme "RxCocoa" in Rx.xcworkspace
-```
+Options for next things to do, in rough order.
+* Swift UI to setup a simple button, where I can upload a screenshot
+* OCR framework in swift
+* Read that screenshot using native OCR framework (I wrote about this somewhere with links and notes to the WWDC videos, but I can't seem to find it)
+* Figure out the overarching sequence diagram for how things fit together (already started on Medium)
+* Setup backend, e.g. mongodb
+* Write python scripts to crunch through the sudoku stuff
